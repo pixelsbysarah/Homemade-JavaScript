@@ -10,9 +10,8 @@ Writing my own clean, responsive slider. Could integrate with any CMS.
 
 ## What's Next
 
-1. Animation (fade, shift, combination of both?)
-2. More CSS tweaking (Responsive Design testing)
-3. Timer - automatic slide every n seconds
-4. Navigation dots or thumbnails
-5. Pass through variables: timer, show/hide navigation elements (arrows, dots), height, etc.
+- More CSS tweaking (Responsive Design testing)
+- Timer - automatic slide every n seconds
+- Navigation dots or thumbnails
+- Pass through variables: timer, show/hide navigation elements (arrows, dots), height, etc.
 
