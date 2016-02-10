@@ -27,9 +27,9 @@ window.onload = function(){
     $.getJSON(alertData, function(data){
         var chnl = data.channel, 
             latestAlert = chnl.item.description, 
-            alertTime = moment(chnl.item.pubDate, "ddd, DD MMM YYYY HH:mm:ss"), 
-            timeNow = moment(),
-        	hoursLapsed = alertTime.diff(timeNow,'hours',true),
+            alertTime = moment.utc(chnl.item.pubDate, "ddd, DD MMM YYYY HH:mm:ss"), 
+            timeNow = moment.utc(),
+            hoursLapsed = timeNow.diff(alertTime,'hours',true),
         	timeLapsed = moment(alertTime, "ddd, DD MMM YYYY HH:mm:ss").fromNow(true),
         	cleanAlert = latestAlert.toLowerCase(),
         	maxDisplayTime = 24; //hours
